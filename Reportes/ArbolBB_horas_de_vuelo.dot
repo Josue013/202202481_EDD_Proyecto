@@ -1,0 +1,32 @@
+digraph G {
+node [shape=doublecircle, fontname="Courier New"];
+edge [fontname="Courier New"];
+Titulo [fontname="Courier New", color=red shape=box3d label="Arbol Binario De Busqueda Horas De Vuelo"];
+305 [style=filled, fillcolor=forestgreen];
+305 -> 100 [label="L"];
+100 [style=filled, fillcolor=lightgreen];
+100 -> 80 [label="L"];
+80 [style=filled, fillcolor=lightgreen];
+80 -> 70 [label="L"];
+70 [style=filled, fillcolor=lightgreen];
+70 -> 40 [label="L"];
+40 [style=filled, fillcolor=lightgreen];
+100 -> 150 [label="R"];
+150 [style=filled, fillcolor=lightgreen];
+150 -> 120 [label="L"];
+120 [style=filled, fillcolor=lightgreen];
+150 -> 175 [label="R"];
+175 [style=filled, fillcolor=lightgreen];
+175 -> 215 [label="R"];
+215 [style=filled, fillcolor=lightgreen];
+215 -> 190 [label="L"];
+190 [style=filled, fillcolor=lightgreen];
+215 -> 295 [label="R"];
+295 [style=filled, fillcolor=lightgreen];
+295 -> 235 [label="L"];
+235 [style=filled, fillcolor=lightgreen];
+305 -> 640 [label="R"];
+640 [style=filled, fillcolor=lightgreen];
+640 -> 365 [label="L"];
+365 [style=filled, fillcolor=lightgreen];
+}

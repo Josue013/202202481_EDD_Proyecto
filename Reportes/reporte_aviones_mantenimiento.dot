@@ -1,0 +1,16 @@
+digraph Aviones {
+layout=circo;
+rankdir=LR;
+node [fontname="Courier New"];
+node [shape=component, style=filled, color=blue, fillcolor="#65babf"];
+Titulo [fontname="Courier New", color=red shape=box3d label="Lista circular doble de aviones en mantenimiento"];
+  "MN70000" [label="N70000", shape=box, color=red, fillcolor="#ffcccb"];
+  "MN70000" -> "MN70016";
+  "MN70000" -> "MN70014";
+  "MN70016" [label="N70016", shape=box, color=red, fillcolor="#ffcccb"];
+  "MN70016" -> "MN70014";
+  "MN70016" -> "MN70000";
+  "MN70014" [label="N70014", shape=box, color=red, fillcolor="#ffcccb"];
+  "MN70014" -> "MN70000";
+  "MN70014" -> "MN70016";
+}

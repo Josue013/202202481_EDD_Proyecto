@@ -1,0 +1,118 @@
+void MatrizDispersa::generarGraficoGraphviz() {
+    ofstream archivo("Reportes/Matriz_dispersa_de_vuelos_y_ciudades.dot");
+    archivo << "digraph G {\n";
+    archivo << "node [shape=box, style=filled, fontname=\"Arial\", fontsize=12];\n"; // Estilo general de nodos
+    archivo << "edge [color=\"#006400\", penwidth=1.5];\n"; // Estilo de conexiones (verde oscuro)
+
+    archivo << "matriz [label=\"\", group=filas, style=invis];\n"; // Nodo matriz invisible
+
+    // Contar filas y columnas
+    int contadorFila = 0;
+    int contadorColumna = 0;
+    NodoMD* filaActual = origen;
+    NodoMD* columnaActual = origen;
+
+    while (filaActual) {
+        contadorFila++;
+        filaActual = filaActual->abajo;
+    }
+    while (columnaActual) {
+        contadorColumna++;
+        columnaActual = columnaActual->derecha;
+    }
+
+    // Nodos de filas (vuelos)
+    filaActual = origen;
+    for (int i = 1; i <= contadorFila && filaActual; i++) {
+        archivo << "U" << i << "[label = \"" << filaActual->vuelo << "\" , group = filas ];\n";
+        filaActual = filaActual->abajo;
+    }
+
+    // Conexiones entre filas
+    archivo << "matriz -> U1 [dir=both] ;\n";
+    for (int i = 1; i < contadorFila; i++) {
+        archivo << "U" << i << " -> U" << (i + 1) << " [dir=both]  ;  \n";
+    }
+
+    // Nodos de columnas (ciudades destino)
+    columnaActual = origen;
+    for (int i = 1; i <= contadorColumna && columnaActual; i++) {
+        archivo << "A" << i << "[label = \"" << columnaActual->ciudad_destino << "\" , group = " << i << " ];\n";
+        columnaActual = columnaActual->derecha;
+    }
+
+    // Conexiones entre columnas
+    archivo << "matriz -> A1 [dir=both] ;\n";
+    for (int i = 1; i < contadorColumna; i++) {
+        archivo << "A" << i << " -> A" << (i + 1) << " [dir=both] ;\n";
+    }
+
+    // Rank same para matriz y columnas
+    archivo << "{ rank = same; matriz;\n";
+    for (int i = 1; i <= contadorColumna; i++) {
+        archivo << "A" << i << ";\n";
+    }
+    archivo << "}\n";
+
+    // Nodos de datos (número de ID) y conexiones
+    filaActual = origen;
+    for (int i = 1; i <= contadorFila && filaActual; i++) {
+        columnaActual = filaActual;
+        for (int j = 1; j <= contadorColumna && columnaActual; j++) {
+            if (!columnaActual->numero_de_id.empty()) {
+                archivo << "X" << j << "Y" << i << " [ label = \"" << columnaActual->numero_de_id 
+                        << "\" style=filled group = " << j << " ] ;\n";
+                
+                // Conexiones con filas y columnas
+                archivo << "U" << i << " -> X" << j << "Y" << i << " ;\n";
+                archivo << "X" << j << "Y" << i << " -> U" << i << " ;\n";
+                archivo << "A" << j << " -> X" << j << "Y" << i << " ;\n";
+                archivo << "X" << j << "Y" << i << " -> A" << j << " ;\n";
+
+                // Conexiones horizontales
+                if (j > 1 && columnaActual->izquierda && !columnaActual->izquierda->numero_de_id.empty()) {
+                    archivo << "X" << (j-1) << "Y" << i << " -> X" << j << "Y" << i << " [dir=both] ;\n";
+                }
+            }
+            columnaActual = columnaActual->derecha;
+        }
+        filaActual = filaActual->abajo;
+    }
+
+    // Rank same para filas y nodos de datos
+    filaActual = origen;
+    for (int i = 1; i <= contadorFila && filaActual; i++) {
+        archivo << "{rank = same ; U" << i << " ;\n";
+        columnaActual = filaActual;
+        for (int j = 1; j <= contadorColumna && columnaActual; j++) {
+            if (!columnaActual->numero_de_id.empty()) {
+                archivo << "X" << j << "Y" << i << " ;";
+            }
+            columnaActual = columnaActual->derecha;
+        }
+        archivo << "}\n";
+        filaActual = filaActual->abajo;
+    }
+
+    archivo << "}\n";
+    archivo.close();
+    
+    // Generar la imagen
+    system("dot -Tpng Reportes/Matriz_dispersa_de_vuelos_y_ciudades.dot -o Reportes/Matriz_dispersa_de_vuelos_y_ciudades.png");
+    system("start Reportes/Matriz_dispersa_de_vuelos_y_ciudades.png");
+    cout << "Gráfico generado exitosamente." << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+```c++
+
+```

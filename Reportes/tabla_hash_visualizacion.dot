@@ -1,0 +1,54 @@
+digraph Hash {
+rankdir=TB;
+node [shape=box, style=filled, fillcolor="#f0f0f5", fontname="Arial", penwidth=2, color="#4CAF50"];
+edge [color="#2196F3", penwidth=1.5, arrowhead=vee];
+Titulo [fontname="Courier New", color=red shape=box3d label="Tabla hash de pilotos"];
+subgraph indices {
+rank=same; 0 [label="0", style=filled, fillcolor="#FFC107"];
+1 [label="1", style=filled, fillcolor="#FFC107"];
+2 [label="2", style=filled, fillcolor="#FFC107"];
+3 [label="3", style=filled, fillcolor="#FFC107"];
+4 [label="4", style=filled, fillcolor="#FFC107"];
+5 [label="5", style=filled, fillcolor="#FFC107"];
+6 [label="6", style=filled, fillcolor="#FFC107"];
+7 [label="7", style=filled, fillcolor="#FFC107"];
+8 [label="8", style=filled, fillcolor="#FFC107"];
+9 [label="9", style=filled, fillcolor="#FFC107"];
+10 [label="10", style=filled, fillcolor="#FFC107"];
+11 [label="11", style=filled, fillcolor="#FFC107"];
+12 [label="12", style=filled, fillcolor="#FFC107"];
+13 [label="13", style=filled, fillcolor="#FFC107"];
+14 [label="14", style=filled, fillcolor="#FFC107"];
+15 [label="15", style=filled, fillcolor="#FFC107"];
+16 [label="16", style=filled, fillcolor="#FFC107"];
+17 [label="17", style=filled, fillcolor="#FFC107"];
+}
+5 -> X01000123;
+X01000123 [label="X01000123"];
+6 -> X02000123;
+X02000123 [label="X02000123"];
+X02000123 -> X20000123;
+X20000123 [label="X20000123"];
+7 -> X03000123;
+X03000123 [label="X03000123"];
+X03000123 -> X30000123;
+X30000123 [label="X30000123"];
+8 -> X04000123;
+X04000123 [label="X04000123"];
+X04000123 -> X40000123;
+X40000123 [label="X40000123"];
+9 -> X05000123;
+X05000123 [label="X05000123"];
+X05000123 -> X50000123;
+X50000123 [label="X50000123"];
+10 -> X06000123;
+X06000123 [label="X06000123"];
+X06000123 -> X60000123;
+X60000123 [label="X60000123"];
+11 -> X70000123;
+X70000123 [label="X70000123"];
+12 -> X80000123;
+X80000123 [label="X80000123"];
+13 -> X90000123;
+X90000123 [label="X90000123"];
+}

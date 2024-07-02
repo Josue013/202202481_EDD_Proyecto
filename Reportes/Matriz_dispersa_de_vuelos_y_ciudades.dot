@@ -1,0 +1,181 @@
+digraph G {
+node [shape=box, style=filled, fontname="Arial", fontsize=12];
+edge [color="#006400", penwidth=1.5];
+matriz [label="", group=filas];
+U1[label = "V700" , group = filas, fillcolor="#f0fff0"];
+U2[label = "V701" , group = filas, fillcolor="#f0fff0"];
+U3[label = "V702" , group = filas, fillcolor="#f0fff0"];
+U4[label = "V703" , group = filas, fillcolor="#f0fff0"];
+U5[label = "V704" , group = filas, fillcolor="#f0fff0"];
+U6[label = "V705" , group = filas, fillcolor="#f0fff0"];
+U7[label = "V706" , group = filas, fillcolor="#f0fff0"];
+U8[label = "V707" , group = filas, fillcolor="#f0fff0"];
+U9[label = "V708" , group = filas, fillcolor="#f0fff0"];
+U10[label = "V709" , group = filas, fillcolor="#f0fff0"];
+U11[label = "V710" , group = filas, fillcolor="#f0fff0"];
+U12[label = "V711" , group = filas, fillcolor="#f0fff0"];
+U13[label = "V712" , group = filas, fillcolor="#f0fff0"];
+U14[label = "V713" , group = filas, fillcolor="#f0fff0"];
+U15[label = "V714" , group = filas, fillcolor="#f0fff0"];
+U16[label = "V715" , group = filas, fillcolor="#f0fff0"];
+U17[label = "V716" , group = filas, fillcolor="#f0fff0"];
+matriz -> U1 [dir=both] ;
+U1 -> U2 [dir=both];
+U2 -> U3 [dir=both];
+U3 -> U4 [dir=both];
+U4 -> U5 [dir=both];
+U5 -> U6 [dir=both];
+U6 -> U7 [dir=both];
+U7 -> U8 [dir=both];
+U8 -> U9 [dir=both];
+U9 -> U10 [dir=both];
+U10 -> U11 [dir=both];
+U11 -> U12 [dir=both];
+U12 -> U13 [dir=both];
+U13 -> U14 [dir=both];
+U14 -> U15 [dir=both];
+U15 -> U16 [dir=both];
+U16 -> U17 [dir=both];
+A1[label = "" , group = 1, fillcolor="#f0fff0"];
+A2[label = "Barcelona" , group = 2, fillcolor="#f0fff0"];
+A3[label = "Bilbao" , group = 3, fillcolor="#f0fff0"];
+A4[label = "Córdoba" , group = 4, fillcolor="#f0fff0"];
+A5[label = "Girona" , group = 5, fillcolor="#f0fff0"];
+A6[label = "Girona" , group = 6, fillcolor="#f0fff0"];
+A7[label = "Granada" , group = 7, fillcolor="#f0fff0"];
+A8[label = "Madrid" , group = 8, fillcolor="#f0fff0"];
+A9[label = "Murcia" , group = 9, fillcolor="#f0fff0"];
+A10[label = "Sevilla" , group = 10, fillcolor="#f0fff0"];
+A11[label = "Valencia" , group = 11, fillcolor="#f0fff0"];
+A12[label = "Zaragoza" , group = 12, fillcolor="#f0fff0"];
+matriz -> A1 [dir=both] ;
+A1 -> A2 [dir=both] ;
+A2 -> A3 [dir=both] ;
+A3 -> A4 [dir=both] ;
+A4 -> A5 [dir=both] ;
+A5 -> A6 [dir=both] ;
+A6 -> A7 [dir=both] ;
+A7 -> A8 [dir=both] ;
+A8 -> A9 [dir=both] ;
+A9 -> A10 [dir=both] ;
+A10 -> A11 [dir=both] ;
+A11 -> A12 [dir=both] ;
+{ rank = same; matriz;
+A1;
+A2;
+A3;
+A4;
+A5;
+A6;
+A7;
+A8;
+A9;
+A10;
+A11;
+A12;
+}
+X1Y2 [ label = "X06000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U2 -> X1Y2 ;
+X1Y2 -> U2 ;
+A1 -> X1Y2 ;
+X1Y2 -> A1 ;
+X1Y3 [ label = "X05000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U3 -> X1Y3 ;
+X1Y3 -> U3 ;
+A1 -> X1Y3 ;
+X1Y3 -> A1 ;
+X1Y4 [ label = "X04000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U4 -> X1Y4 ;
+X1Y4 -> U4 ;
+A1 -> X1Y4 ;
+X1Y4 -> A1 ;
+X1Y5 [ label = "X03000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U5 -> X1Y5 ;
+X1Y5 -> U5 ;
+A1 -> X1Y5 ;
+X1Y5 -> A1 ;
+X1Y6 [ label = "X02000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U6 -> X1Y6 ;
+X1Y6 -> U6 ;
+A1 -> X1Y6 ;
+X1Y6 -> A1 ;
+X1Y7 [ label = "X01000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U7 -> X1Y7 ;
+X1Y7 -> U7 ;
+A1 -> X1Y7 ;
+X1Y7 -> A1 ;
+X1Y8 [ label = "X90000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U8 -> X1Y8 ;
+X1Y8 -> U8 ;
+A1 -> X1Y8 ;
+X1Y8 -> A1 ;
+X1Y9 [ label = "X80000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U9 -> X1Y9 ;
+X1Y9 -> U9 ;
+A1 -> X1Y9 ;
+X1Y9 -> A1 ;
+X1Y10 [ label = "X70000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U10 -> X1Y10 ;
+X1Y10 -> U10 ;
+A1 -> X1Y10 ;
+X1Y10 -> A1 ;
+X1Y11 [ label = "X60000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U11 -> X1Y11 ;
+X1Y11 -> U11 ;
+A1 -> X1Y11 ;
+X1Y11 -> A1 ;
+X1Y12 [ label = "X50000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U12 -> X1Y12 ;
+X1Y12 -> U12 ;
+A1 -> X1Y12 ;
+X1Y12 -> A1 ;
+X1Y13 [ label = "X40000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U13 -> X1Y13 ;
+X1Y13 -> U13 ;
+A1 -> X1Y13 ;
+X1Y13 -> A1 ;
+X1Y14 [ label = "X30000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U14 -> X1Y14 ;
+X1Y14 -> U14 ;
+A1 -> X1Y14 ;
+X1Y14 -> A1 ;
+X1Y15 [ label = "X20000123", style=filled, fillcolor="#ffffcc", group = 1] ;
+U15 -> X1Y15 ;
+X1Y15 -> U15 ;
+A1 -> X1Y15 ;
+X1Y15 -> A1 ;
+{rank = same ; U1 ;
+}
+{rank = same ; U2 ;
+X1Y2 ;}
+{rank = same ; U3 ;
+X1Y3 ;}
+{rank = same ; U4 ;
+X1Y4 ;}
+{rank = same ; U5 ;
+X1Y5 ;}
+{rank = same ; U6 ;
+X1Y6 ;}
+{rank = same ; U7 ;
+X1Y7 ;}
+{rank = same ; U8 ;
+X1Y8 ;}
+{rank = same ; U9 ;
+X1Y9 ;}
+{rank = same ; U10 ;
+X1Y10 ;}
+{rank = same ; U11 ;
+X1Y11 ;}
+{rank = same ; U12 ;
+X1Y12 ;}
+{rank = same ; U13 ;
+X1Y13 ;}
+{rank = same ; U14 ;
+X1Y14 ;}
+{rank = same ; U15 ;
+X1Y15 ;}
+{rank = same ; U16 ;
+}
+{rank = same ; U17 ;
+}
+}

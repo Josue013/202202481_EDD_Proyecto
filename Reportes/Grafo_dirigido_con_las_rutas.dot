@@ -1,0 +1,21 @@
+digraph G {
+  node [shape=note, style=filled, color=lightgrey, fontname=Arial, penwidth=2];
+  edge [fontname=Arial, fontsize=10, color=black, arrowhead=vee];
+Titulo [fontname="Courier New", color=red shape=box3d label="Grafo dirigido de rutas"];
+    "Girona" -> "Madrid" [label="23", fontcolor=blue];
+    "Madrid" -> "Girona" [label="26", fontcolor=blue];
+    "Madrid" -> "Barcelona" [label="21", fontcolor=blue];
+    "Barcelona" -> "Madrid" [label="35", fontcolor=blue];
+    "Barcelona" -> "Zaragoza" [label="30", fontcolor=blue];
+    "Barcelona" -> "Sevilla" [label="40", fontcolor=blue];
+    "Sevilla" -> "Valencia" [label="11", fontcolor=blue];
+    "Sevilla" -> "Bilbao" [label="24", fontcolor=blue];
+    "Bilbao" -> "Granada" [label="17", fontcolor=blue];
+    "Bilbao" -> "Sevilla" [label="24", fontcolor=blue];
+    "Granada" -> "Murcia" [label="9", fontcolor=blue];
+    "Granada" -> "Córdoba" [label="16", fontcolor=blue];
+    "Granada" -> "Girona" [label="29", fontcolor=blue];
+    "Murcia" -> "Girona" [label="19", fontcolor=blue];
+    "Murcia" -> "Madrid" [label="40", fontcolor=blue];
+    "Córdoba" -> "Bilbao" [label="22", fontcolor=blue];
+}

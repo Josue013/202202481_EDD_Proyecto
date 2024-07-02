@@ -1,0 +1,15 @@
+digraph G {
+    node [shape=record];
+Titulo [fontname="Courier New", color=red shape=box3d label="Árbol B con aviones disponibles"];
+    nodo0 [label="N70002 - N70005 - N70008 - N70011", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo1 [label="N50013 - N70001", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo0 -> nodo1:n [color="#006400"];
+    nodo2 [label="N70003", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo0 -> nodo2:n [color="#006400"];
+    nodo3 [label="N70006", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo0 -> nodo3:n [color="#006400"];
+    nodo4 [label="N70009", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo0 -> nodo4:n [color="#006400"];
+    nodo5 [label="N70012 - N70015", shape=box, style=filled, fillcolor="#e0f2e0", fontname="Arial", fontsize=12, penwidth=2.0];
+    nodo0 -> nodo5:n [color="#006400"];
+}
