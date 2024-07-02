@@ -7,6 +7,7 @@
 #include <string>
 using namespace std;
 
+
 const int infinityNum = 1e9; 
 
 struct Edge {

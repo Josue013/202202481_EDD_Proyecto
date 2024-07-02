@@ -6,10 +6,12 @@
 #include "NodoBB.h"
 using namespace std;
 
+
 class ArbolBB {
 private:
     NodoBB* raiz;
     std::ofstream archivo;
+
 
 public:
     ArbolBB();
@@ -73,6 +75,7 @@ NodoBB* ArbolBB::buscarPorId(const string& id, NodoBB* nodoPtr) {
     return result;
 }
 
+
 void ArbolBB::RecorridoPreOrden() {
     RecorridoPreOrden(raiz);
 }
@@ -84,6 +87,7 @@ void ArbolBB::RecorridoInOrden() {
 void ArbolBB::RecorridoPostOrden() {
     RecorridoPostOrden(raiz);
 }
+
 
 void ArbolBB::RecorridoPreOrden(NodoBB* nodoPtr) {
     if (nodoPtr != nullptr) {
@@ -111,6 +115,7 @@ void ArbolBB::RecorridoPostOrden(NodoBB* nodoPtr) {
         std::cout << "      ↓       " << std::endl;
     }
 }
+
 
 void ArbolBB::generarReporte() {
     if (estaVacio()) {

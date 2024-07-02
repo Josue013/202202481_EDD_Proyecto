@@ -1,32 +1,33 @@
 #ifndef AVION_H
 #define AVION_H
 #include <string>
+using namespace std;
+
 
 class Avion {
 public:
     // Constructor
-    Avion(const std::string &vuelo, const std::string &numeroRegistro, const std::string &modelo, int capacidad, const std::string &aerolinea, const std::string &ciudad_destino, const std::string &estado) 
+    Avion(const string &vuelo, const string &numeroRegistro, const string &modelo, int capacidad, const string &aerolinea, const string &ciudad_destino, const string &estado) 
         : vuelo(vuelo), numeroRegistro(numeroRegistro), modelo(modelo), capacidad(capacidad), aerolinea(aerolinea), ciudad_destino(ciudad_destino), estado(estado) {}
 
     // Getters
-    std::string getVuelo() const { return vuelo; }
-    std::string getNumeroRegistro() const { return numeroRegistro; }
-    std::string getModelo() const { return modelo; }
+    string getVuelo() const { return vuelo; }
+    string getNumeroRegistro() const { return numeroRegistro; }
+    string getModelo() const { return modelo; }
     int getCapacidad() const { return capacidad; }
-    std::string getAerolinea() const { return aerolinea; }
-    std::string getCiudadDestino() const { return ciudad_destino; }
-    std::string getEstado() const { return estado; }
+    string getAerolinea() const { return aerolinea; }
+    string getCiudadDestino() const { return ciudad_destino; }
+    string getEstado() const { return estado; }
 
     ~Avion() {}
 
 private:
-    std::string vuelo;
-    std::string numeroRegistro;
-    std::string modelo;
+    string vuelo;
+    string numeroRegistro;
+    string modelo;
     int capacidad;
-    std::string aerolinea;
-    std::string ciudad_destino;
-    std::string estado;
+    string aerolinea;
+    string ciudad_destino;
+    string estado;
 };
-
-#endif 
+#endif // AVION_H

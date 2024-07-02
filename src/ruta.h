@@ -1,21 +1,23 @@
 #ifndef RUTA_H
 #define RUTA_H
 #include <string>
+using namespace std;
+
 
 class Ruta {
 public:
-    Ruta(const std::string &origen, const std::string &destino, int distancia): origen(origen), destino(destino), distancia(distancia) {}
+    Ruta(const string &origen, const string &destino, int distancia): origen(origen), destino(destino), distancia(distancia) {}
 
-    std::string getOrigen() const { return origen; }
-    std::string getDestino() const { return destino; }
+    string getOrigen() const { return origen; }
+    string getDestino() const { return destino; }
     int getDistancia() const { return distancia; }
 
     ~Ruta() {}
 
 private:
-    std::string origen;
-    std::string destino;
+    string origen;
+    string destino;
     int distancia;
 };
 
-#endif 
+#endif RUTA_H

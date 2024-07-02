@@ -36,18 +36,38 @@ U13 -> U14 [dir=both];
 U14 -> U15 [dir=both];
 U15 -> U16 [dir=both];
 U16 -> U17 [dir=both];
+A0[label = "" , group = 0, fillcolor="#f0fff0"];
 A1[label = "" , group = 1, fillcolor="#f0fff0"];
-A2[label = "Barcelona" , group = 2, fillcolor="#f0fff0"];
-A3[label = "Bilbao" , group = 3, fillcolor="#f0fff0"];
-A4[label = "Córdoba" , group = 4, fillcolor="#f0fff0"];
-A5[label = "Girona" , group = 5, fillcolor="#f0fff0"];
-A6[label = "Girona" , group = 6, fillcolor="#f0fff0"];
-A7[label = "Granada" , group = 7, fillcolor="#f0fff0"];
-A8[label = "Madrid" , group = 8, fillcolor="#f0fff0"];
-A9[label = "Murcia" , group = 9, fillcolor="#f0fff0"];
+A2[label = "Madrid" , group = 2, fillcolor="#f0fff0"];
+A3[label = "" , group = 3, fillcolor="#f0fff0"];
+A4[label = "Barcelona" , group = 4, fillcolor="#f0fff0"];
+A5[label = "" , group = 5, fillcolor="#f0fff0"];
+A6[label = "Barcelona" , group = 6, fillcolor="#f0fff0"];
+A7[label = "" , group = 7, fillcolor="#f0fff0"];
+A8[label = "Sevilla" , group = 8, fillcolor="#f0fff0"];
+A9[label = "" , group = 9, fillcolor="#f0fff0"];
 A10[label = "Sevilla" , group = 10, fillcolor="#f0fff0"];
-A11[label = "Valencia" , group = 11, fillcolor="#f0fff0"];
-A12[label = "Zaragoza" , group = 12, fillcolor="#f0fff0"];
+A11[label = "" , group = 11, fillcolor="#f0fff0"];
+A12[label = "Valencia" , group = 12, fillcolor="#f0fff0"];
+A13[label = "" , group = 13, fillcolor="#f0fff0"];
+A14[label = "Valencia" , group = 14, fillcolor="#f0fff0"];
+A15[label = "" , group = 15, fillcolor="#f0fff0"];
+A16[label = "Zaragoza" , group = 16, fillcolor="#f0fff0"];
+A17[label = "" , group = 17, fillcolor="#f0fff0"];
+A18[label = "Zaragoza" , group = 18, fillcolor="#f0fff0"];
+A19[label = "" , group = 19, fillcolor="#f0fff0"];
+A20[label = "Bilbao" , group = 20, fillcolor="#f0fff0"];
+A21[label = "" , group = 21, fillcolor="#f0fff0"];
+A22[label = "Bilbao" , group = 22, fillcolor="#f0fff0"];
+A23[label = "" , group = 23, fillcolor="#f0fff0"];
+A24[label = "Granada" , group = 24, fillcolor="#f0fff0"];
+A25[label = "" , group = 25, fillcolor="#f0fff0"];
+A26[label = "Granada" , group = 26, fillcolor="#f0fff0"];
+A27[label = "" , group = 27, fillcolor="#f0fff0"];
+A28[label = "Córdoba" , group = 28, fillcolor="#f0fff0"];
+A29[label = "" , group = 29, fillcolor="#f0fff0"];
+A30[label = "" , group = 30, fillcolor="#f0fff0"];
+A31[label = "Murcia" , group = 31, fillcolor="#f0fff0"];
 matriz -> A1 [dir=both] ;
 A1 -> A2 [dir=both] ;
 A2 -> A3 [dir=both] ;
@@ -60,6 +80,26 @@ A8 -> A9 [dir=both] ;
 A9 -> A10 [dir=both] ;
 A10 -> A11 [dir=both] ;
 A11 -> A12 [dir=both] ;
+A12 -> A13 [dir=both] ;
+A13 -> A14 [dir=both] ;
+A14 -> A15 [dir=both] ;
+A15 -> A16 [dir=both] ;
+A16 -> A17 [dir=both] ;
+A17 -> A18 [dir=both] ;
+A18 -> A19 [dir=both] ;
+A19 -> A20 [dir=both] ;
+A20 -> A21 [dir=both] ;
+A21 -> A22 [dir=both] ;
+A22 -> A23 [dir=both] ;
+A23 -> A24 [dir=both] ;
+A24 -> A25 [dir=both] ;
+A25 -> A26 [dir=both] ;
+A26 -> A27 [dir=both] ;
+A27 -> A28 [dir=both] ;
+A28 -> A29 [dir=both] ;
+A29 -> A30 [dir=both] ;
+A30 -> A31 [dir=both] ;
+A31 -> A32 [dir=both] ;
 { rank = same; matriz;
 A1;
 A2;
@@ -73,107 +113,127 @@ A9;
 A10;
 A11;
 A12;
+A13;
+A14;
+A15;
+A16;
+A17;
+A18;
+A19;
+A20;
+A21;
+A22;
+A23;
+A24;
+A25;
+A26;
+A27;
+A28;
+A29;
+A30;
+A31;
+A32;
 }
-X1Y2 [ label = "X06000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U2 -> X1Y2 ;
-X1Y2 -> U2 ;
-A1 -> X1Y2 ;
-X1Y2 -> A1 ;
-X1Y3 [ label = "X05000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U3 -> X1Y3 ;
-X1Y3 -> U3 ;
-A1 -> X1Y3 ;
-X1Y3 -> A1 ;
-X1Y4 [ label = "X04000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U4 -> X1Y4 ;
-X1Y4 -> U4 ;
-A1 -> X1Y4 ;
-X1Y4 -> A1 ;
-X1Y5 [ label = "X03000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U5 -> X1Y5 ;
-X1Y5 -> U5 ;
-A1 -> X1Y5 ;
-X1Y5 -> A1 ;
-X1Y6 [ label = "X02000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U6 -> X1Y6 ;
-X1Y6 -> U6 ;
-A1 -> X1Y6 ;
-X1Y6 -> A1 ;
-X1Y7 [ label = "X01000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U7 -> X1Y7 ;
-X1Y7 -> U7 ;
-A1 -> X1Y7 ;
-X1Y7 -> A1 ;
-X1Y8 [ label = "X90000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U8 -> X1Y8 ;
-X1Y8 -> U8 ;
-A1 -> X1Y8 ;
-X1Y8 -> A1 ;
-X1Y9 [ label = "X80000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U9 -> X1Y9 ;
-X1Y9 -> U9 ;
-A1 -> X1Y9 ;
-X1Y9 -> A1 ;
-X1Y10 [ label = "X70000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U10 -> X1Y10 ;
-X1Y10 -> U10 ;
-A1 -> X1Y10 ;
-X1Y10 -> A1 ;
-X1Y11 [ label = "X60000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U11 -> X1Y11 ;
-X1Y11 -> U11 ;
-A1 -> X1Y11 ;
-X1Y11 -> A1 ;
-X1Y12 [ label = "X50000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U12 -> X1Y12 ;
-X1Y12 -> U12 ;
-A1 -> X1Y12 ;
-X1Y12 -> A1 ;
-X1Y13 [ label = "X40000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U13 -> X1Y13 ;
-X1Y13 -> U13 ;
-A1 -> X1Y13 ;
-X1Y13 -> A1 ;
-X1Y14 [ label = "X30000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U14 -> X1Y14 ;
-X1Y14 -> U14 ;
-A1 -> X1Y14 ;
-X1Y14 -> A1 ;
-X1Y15 [ label = "X20000123", style=filled, fillcolor="#ffffcc", group = 1] ;
-U15 -> X1Y15 ;
-X1Y15 -> U15 ;
-A1 -> X1Y15 ;
-X1Y15 -> A1 ;
+X2Y2 [ label = "X06000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U2 -> X2Y2 ;
+X2Y2 -> U2 ;
+A2 -> X2Y2 ;
+X2Y2 -> A2 ;
+X2Y3 [ label = "X05000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U3 -> X2Y3 ;
+X2Y3 -> U3 ;
+A2 -> X2Y3 ;
+X2Y3 -> A2 ;
+X2Y4 [ label = "X04000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U4 -> X2Y4 ;
+X2Y4 -> U4 ;
+A2 -> X2Y4 ;
+X2Y4 -> A2 ;
+X2Y5 [ label = "X03000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U5 -> X2Y5 ;
+X2Y5 -> U5 ;
+A2 -> X2Y5 ;
+X2Y5 -> A2 ;
+X2Y6 [ label = "X02000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U6 -> X2Y6 ;
+X2Y6 -> U6 ;
+A2 -> X2Y6 ;
+X2Y6 -> A2 ;
+X2Y7 [ label = "X01000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U7 -> X2Y7 ;
+X2Y7 -> U7 ;
+A2 -> X2Y7 ;
+X2Y7 -> A2 ;
+X2Y8 [ label = "X90000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U8 -> X2Y8 ;
+X2Y8 -> U8 ;
+A2 -> X2Y8 ;
+X2Y8 -> A2 ;
+X2Y9 [ label = "X80000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U9 -> X2Y9 ;
+X2Y9 -> U9 ;
+A2 -> X2Y9 ;
+X2Y9 -> A2 ;
+X2Y10 [ label = "X70000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U10 -> X2Y10 ;
+X2Y10 -> U10 ;
+A2 -> X2Y10 ;
+X2Y10 -> A2 ;
+X2Y11 [ label = "X60000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U11 -> X2Y11 ;
+X2Y11 -> U11 ;
+A2 -> X2Y11 ;
+X2Y11 -> A2 ;
+X2Y12 [ label = "X50000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U12 -> X2Y12 ;
+X2Y12 -> U12 ;
+A2 -> X2Y12 ;
+X2Y12 -> A2 ;
+X2Y13 [ label = "X40000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U13 -> X2Y13 ;
+X2Y13 -> U13 ;
+A2 -> X2Y13 ;
+X2Y13 -> A2 ;
+X2Y14 [ label = "X30000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U14 -> X2Y14 ;
+X2Y14 -> U14 ;
+A2 -> X2Y14 ;
+X2Y14 -> A2 ;
+X2Y15 [ label = "X20000123", style=filled, fillcolor="#ffffcc", group = 2] ;
+U15 -> X2Y15 ;
+X2Y15 -> U15 ;
+A2 -> X2Y15 ;
+X2Y15 -> A2 ;
 {rank = same ; U1 ;
 }
 {rank = same ; U2 ;
-X1Y2 ;}
+X2Y2 ;}
 {rank = same ; U3 ;
-X1Y3 ;}
+X2Y3 ;}
 {rank = same ; U4 ;
-X1Y4 ;}
+X2Y4 ;}
 {rank = same ; U5 ;
-X1Y5 ;}
+X2Y5 ;}
 {rank = same ; U6 ;
-X1Y6 ;}
+X2Y6 ;}
 {rank = same ; U7 ;
-X1Y7 ;}
+X2Y7 ;}
 {rank = same ; U8 ;
-X1Y8 ;}
+X2Y8 ;}
 {rank = same ; U9 ;
-X1Y9 ;}
+X2Y9 ;}
 {rank = same ; U10 ;
-X1Y10 ;}
+X2Y10 ;}
 {rank = same ; U11 ;
-X1Y11 ;}
+X2Y11 ;}
 {rank = same ; U12 ;
-X1Y12 ;}
+X2Y12 ;}
 {rank = same ; U13 ;
-X1Y13 ;}
+X2Y13 ;}
 {rank = same ; U14 ;
-X1Y14 ;}
+X2Y14 ;}
 {rank = same ; U15 ;
-X1Y15 ;}
+X2Y15 ;}
 {rank = same ; U16 ;
 }
 {rank = same ; U17 ;

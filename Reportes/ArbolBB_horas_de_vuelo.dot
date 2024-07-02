@@ -2,8 +2,8 @@ digraph G {
 node [shape=doublecircle, fontname="Courier New"];
 edge [fontname="Courier New"];
 Titulo [fontname="Courier New", color=red shape=box3d label="Arbol Binario De Busqueda Horas De Vuelo"];
-305 [style=filled, fillcolor=forestgreen];
-305 -> 100 [label="L"];
+300 [style=filled, fillcolor=forestgreen];
+300 -> 100 [label="L"];
 100 [style=filled, fillcolor=lightgreen];
 100 -> 80 [label="L"];
 80 [style=filled, fillcolor=lightgreen];
@@ -25,8 +25,12 @@ Titulo [fontname="Courier New", color=red shape=box3d label="Arbol Binario De Bu
 295 [style=filled, fillcolor=lightgreen];
 295 -> 235 [label="L"];
 235 [style=filled, fillcolor=lightgreen];
-305 -> 640 [label="R"];
+300 -> 640 [label="R"];
 640 [style=filled, fillcolor=lightgreen];
-640 -> 365 [label="L"];
+640 -> 305 [label="L"];
+305 [style=filled, fillcolor=lightgreen];
+305 -> 365 [label="R"];
 365 [style=filled, fillcolor=lightgreen];
+640 -> 999 [label="R"];
+999 [style=filled, fillcolor=lightgreen];
 }

@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+
 template <typename type>
 struct Nodo {
     type data;

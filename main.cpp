@@ -24,7 +24,7 @@ void Recorridos();
 void recomendacionRuta();
 Hash tablaPilotos(18);
 MatrizDispersa matrizVuelosCiudades;
-ArbolB arbolDisponible;
+BTree arbolDisponible;
 ArbolBB arbolPilotos; 
 AdjacencyList listaRutas;
 DoubleCircularList<Avion> listaAvionesMantenimiento;
@@ -150,11 +150,12 @@ void cargarMovimientos() {
             //"MantenimientoAviones,Ingreso,"
             if (linea.find("MantenimientoAviones,Ingreso,") != string::npos) {
                 string ingreso = linea.substr(linea.find(",") + 8 + 1, linea.find(";") - linea.find(",") - 9);
-                Avion* avion = arbolDisponible.buscarAvion(ingreso);
+                // Buscar el avion en el arbol de aviones disponibles e ingresarlo a la lista de mantenimiento
+                Avion* avion = arbolDisponible.search(ingreso);
                 if (avion != nullptr) {
                     Avion* avionNuevo = new Avion(avion->getVuelo(), avion->getNumeroRegistro(), avion->getModelo(), avion->getCapacidad(), avion->getAerolinea(), avion->getCiudadDestino(), "Mantenimiento");
                     listaAvionesMantenimiento.insert(*avionNuevo);
-                    arbolDisponible.Deletear(ingreso);
+                    arbolDisponible.remove(ingreso);
                 }
                 cout << "El avion con registro " << ingreso << " ingreso a mantenimiento" << endl;
             } else if (linea.find("MantenimientoAviones,Salida,") != string::npos) {
@@ -276,7 +277,7 @@ void reportes() {
     switch (opcion_reporte) {
       case 1:
         //reporte Arbol B con aviones disponibles
-        arbolDisponible.generarDot();
+        arbolDisponible.generateAvailablePlanesReport(); 
         break;
       case 2:
         //reporte Lista de aviones en mantenimiento
@@ -297,8 +298,9 @@ void reportes() {
         break;
       case 6:
         //reporte Matriz dispersa de vuelos y ciudades
+        matrizVuelosCiudades.imprimirMatriz();
         matrizVuelosCiudades.generarGraficoGraphviz();
-        //matrizVuelosCiudades.imprimirMatriz();
+        
         break;
       case 7:
         cout << "Regresando al menu principal..." << endl;
